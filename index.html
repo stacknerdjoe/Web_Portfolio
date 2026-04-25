@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="/">Joseph O</a>
+        <nav>
+            <a target="_blank" href="https://github.com/stacknerdjoe"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/joseph-onyenemerem-946201b6/"><i class="fa-brands fa-linkedin"></i></a>
+        </nav> 
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hello! I'm Joseph...</h1>
+                <p>Software Developer</p>
+            </div>
+            <h5 class="intro-description">
+                A Computer Engineer by qualification, and a software developer by trade.
+                Based in Sweden, I love to play basketball, video games and build all sorts of fun and
+                useful internet applications!
+
+            </h5>
+            <div class="links-container">
+                 <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:joseph.onyenemerem@yahoo.com">                   
+                     Email me
+                    </a>
+                    <a target="_blank" href="https://github.com/stacknerdjoe"> Github
+                       </a>
+            <a target="_blank" href="https://www.linkedin.com/in/joseph-onyenemerem-946201b6/"> Linkedin
+                            </a>
+            </div>
+
+            <div id="play-game">
+                <button onclick="playGame()">Play game?</button>
+            </div>
+
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great...not it's ruined!</p>
+                <input type="color" id="color-picker" onchange="changeColor()"
+                 value="#0084ff" />
+                 <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>ReactJS | TypeScript | ExpressJS & NodeJS | NextJS | 
+                             </td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Data analysis | Data visualisation</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>TailwindCSS | FantaCSS | Firebase | Stripe | PostgreSQL | CI/CD |
+                            Git | Docker | Kubernetes | AWS | MongoDB | REST APIs
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
+                        <td>Canvas | Adobe Photoshop</td>
+                    </tr>
+                    <tr>
+                        <td>Security</td>
+                        <td>Cybersecurity | Linux | Firewall Configuration | Network Security</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Lastest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>April 25 2026</p>
+                        <h4>Repsready</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                        <p> The Simple 30 Days Workout Training Plan  </p>
+                       
+                        <div class="project-links">
+                            <a target="_blank" href="https://repsready.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/stacknerdjoe/1_repsready">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/Web_Portfolio/public/Repsready.jpg" alt="Roadsense-thumbnail" >
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>April 22, 2026</p>
+                        <h4>Naijastore</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Full stack</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Stripe</p>
+                            </div>
+                        </div>
+                        <p> A Super cool store for programmers and cool 
+                            friends!
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://master.d3sgzvgsefy3l9.amplifyapp.com/">Live</a>
+                            <a target="_blank" href="https://github.com/stacknerdjoe/2_naijastore">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/Web_Portfolio/public/Naijastore.jpg" alt="Roadsense-thumbnail" >
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div>
+                        <p>January 15 2026</p>
+                        <h4>Nairaspace | The Subscription Tracker</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                        <p> Track all your subscription analytics!
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://nairaspace.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/stacknerdjoe/3_nairaspace">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/Web_Portfolio/public/nairaspace.jpg" alt="Roadsense-thumbnail" >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>By <a href="https://www.josephPortfolio.com"
+        target="_blank">Joseph</a> ⭐️ the repo on 
+    <a target="_blank" href="">GitHub</a></p>
+    </footer>
+    <script>
+        // This is where i create the interactivity of my color switching game
+
+        //1. select all the html elements so that I can control them
+      const body = document.querySelector('body')
+      const colorInput = document.getElementById('color-picker')
+      const colorDiv = document.querySelector('.color-div')
+      const hiddenText = document.querySelector('.color-div p')
+      const resetBtn = document.querySelector('.color-div button')
+      const playBtn = document.getElementById('play-game')
+
+
+        //2. create the functions
+      function playGame() {
+        // this function enables the play of the game by showing the color the color selector input
+
+        colorDiv.style.display = 'block'
+        playBtn.style.display = 'none'
+      }
+
+      function changeColor() {
+        //take the users selected color on the input, and assign it to be the background color of the website
+        const selectedColor = colorInput.value
+        body.style.background = selectedColor
+        resetBtn.style.display = 'block'
+        hiddenText.style.display = 'block'
+        colorInput.style.display = 'none'
+      }
+
+      function resetColor() {
+        body.style.background = 'white'
+        colorInput.style.display = 'block'
+        playBtn.style.display = 'block'
+
+        hiddenText.style.display = 'none'
+        resetBtn.style.display = 'none'
+        colorDiv.style.display = 'none'
+      }
+
+
+
+        //3. assign the functions to the buttons by adding the function call to the actual elements (done above in the html code)
+    </script>
+</body>
+</html>
