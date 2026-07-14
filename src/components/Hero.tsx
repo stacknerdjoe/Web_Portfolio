@@ -5,7 +5,7 @@ export default function Hero() {
       <div className="fade-in-up mb-8 inline-flex items-center gap-2 bg-[#13131A] border border-[#1E1E2E] rounded-full px-4 py-2 w-fit">
         <span className="w-2 h-2 rounded-full bg-[#6EE7B7] animate-pulse" />
         <span className="text-xs text-[#64748B] font-medium">
-          Available for opportunities in Germany
+          Available for opportunities 
         </span>
       </div>
 

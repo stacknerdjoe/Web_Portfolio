@@ -40,7 +40,7 @@ export default function Contact() {
           {[
             { label: "Location", value: "Stockholm, Sweden" },
             { label: "Available", value: "Immediately" },
-           /* { label: "Work Permit", value: "5 to 8 weeks" }, */
+            { label: "Open to", value: "Relocation" }, 
           ].map((item) => (
             <div
               key={item.label}
