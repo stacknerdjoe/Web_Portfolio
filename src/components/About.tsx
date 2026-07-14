@@ -56,7 +56,7 @@ export default function About() {
         <div>
           <div className="flex justify-center mb-8">
              <Image
-               src="/profilepic.jpeg"
+               src="/profilepic_edited.jpg"
               alt="Joseph Onyenemerem"
                width={180}
               height={180}
